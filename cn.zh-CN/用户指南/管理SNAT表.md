@@ -1,14 +1,14 @@
-# 管理SNAT表 {#concept_czl_mcz_ydb .concept}
+# 管理SNAT表 {#concept_pnw_cdl_32b .concept}
 
 NAT网关提供SNAT功能，为VPC内无公网IP的ECS实例提供访问互联网的代理服务。
 
-## SNAT条目 {#section_gsb_pcz_ydb .section}
+## SNAT条目 {#section_qnw_cdl_32b .section}
 
 NAT网关将SNAT功能的配置，抽象为一张SNAT列表。您可以通过配置SNAT列表中的SNAT条目，实现SNAT功能的配置。
 
 每个SNAT条目由交换机和公网IP组成。交换机为专有网络ECS实例所属的交换机，公网IP为NAT网关绑定的弹性公网IP（EIP），如下表所示。
 
-**说明：** 对于2017年11月3日之前账户下存在NAT带宽包的用户，SNAT条目中的公网IP为NAT带宽包提供的公网IP。
+**说明：** 对于2018年1月26日之前账户下存在NAT带宽包的用户，SNAT条目中的公网IP为NAT带宽包提供的公网IP。
 
 |交换机|公网IP|
 |:--|:---|
@@ -19,7 +19,9 @@ NAT网关将SNAT功能的配置，抽象为一张SNAT列表。您可以通过配
 
 **说明：** 若某台持有公网IP的ECS实例（比如已经绑定了EIP）发起互联网访问时，会优先使用其持有的公网IP，而不会使用NAT网关的SNAT功能。
 
-## 添加SNAT条目 {#section_dv2_bdz_ydb .section}
+## 添加SNAT条目 {#section_unw_cdl_32b .section}
+
+完成以下操作，添加SNAT条目：
 
 1.  登录[VPC管理控制台](https://vpcnext.console.aliyun.com/nat/)。
 2.  在左侧导航栏，单击**NAT网关**。
@@ -43,7 +45,9 @@ NAT网关将SNAT功能的配置，抽象为一张SNAT列表。您可以通过配
  |
 
 
-## 编辑SNAT条目 {#section_byj_tdz_ydb .section}
+## 编辑SNAT条目 {#section_b4w_cdl_32b .section}
+
+完成以下操作，编辑SNAT条目：
 
 1.  登录[VPC管理控制台](https://vpcnext.console.aliyun.com/nat/)。
 2.  在左侧导航栏，单击**NAT网关**。
@@ -51,7 +55,9 @@ NAT网关将SNAT功能的配置，抽象为一张SNAT列表。您可以通过配
 4.  单击目标NAT网关的**设置SNAT**选项。
 5.  单击目标SNAT条目的**编辑**，更新SNAT条目配置。
 
-## 删除SNAT条目 {#section_ofp_qdz_ydb .section}
+## 删除SNAT条目 {#section_d4w_cdl_32b .section}
+
+完成以下操作，删除SNAT条目：
 
 1.  登录[VPC管理控制台](https://vpcnext.console.aliyun.com/nat/)。
 2.  在左侧导航栏，单击**NAT网关**。
