@@ -6,9 +6,9 @@ NAT网关提供DNAT功能，将NAT网关上的公网IP映射给专有网络的EC
 
 NAT网关将DNAT功能的配置，抽象为一张DNAT列表。您可以通过配置DNAT列表中的DNAT条目，实现DNAT功能的配置。
 
-每个DNAT条目由五部分组成：公网IP、公网端口、私网IP、私网端口和协议。其中公网IP为NAT网关绑定的弹性公网IP（EIP），私网IP为专有网络中ECS实例的IP。配置DNAT条目和后，公网IP收到的数据将按照自定义的映射规则，转发给专有网络VPC内的ECS。
+每个DNAT条目由五部分组成：公网IP、公网端口、私网IP、私网端口和协议。其中公网IP为NAT网关绑定的弹性公网IP（EIP），私网IP为专有网络中ECS实例的IP。配置DNAT条目后，公网IP收到的数据将按照自定义的映射规则，转发给专有网络VPC内的ECS。
 
-**说明：** 对于2017年11月3日之前账户下存在NAT带宽包的用户，DNAT条目中的公网IP为NAT带宽包提供的公网IP。
+**说明：** 对于2018年1月26日之前账户下存在NAT带宽包的用户，DNAT条目中的公网IP为NAT带宽包提供的公网IP。
 
 ## 端口映射和IP映射 {#section_mkg_wcz_ydb .section}
 
@@ -30,6 +30,8 @@ DNAT功能包括端口映射与IP映射：
 
 
 ## 添加DNAT条目 {#section_dv2_bdz_ydb .section}
+
+完成以下操作，添加DNAT条目：
 
 1.  登录[VPC管理控制台](https://vpcnext.console.aliyun.com/nat/)。
 2.  在左侧导航栏，单击**NAT网关**。
@@ -61,7 +63,9 @@ DNAT功能包括端口映射与IP映射：
  |
 
 
-## 编辑DNAT条目 { .section}
+## 编辑DNAT条目 {#section_mwp_tcl_32b .section}
+
+完成以下操作，编辑DNAT条目：
 
 1.  登录[VPC管理控制台](https://vpcnext.console.aliyun.com/nat/)。
 2.  在左侧导航栏，单击**NAT网关**。
@@ -70,6 +74,8 @@ DNAT功能包括端口映射与IP映射：
 5.  单击目标DNAT条目的**编辑**，更新DNAT条目配置。
 
 ## 删除DNAT条目 {#section_ofp_qdz_ydb .section}
+
+完成以下操作，删除：
 
 1.  登录[VPC管理控制台](https://vpcnext.console.aliyun.com/nat/)。
 2.  在左侧导航栏，单击**NAT网关**。
