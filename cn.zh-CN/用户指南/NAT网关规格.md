@@ -25,4 +25,5 @@ NAT网关提供如下规格。
 
 -   NAT网关暂不支持报文分片。
 
+-   当VPC内无公网IP的ECS实例通过NAT网关访问公网上同一个目的IP和端口的带宽超过5Gbps时，建议您为NAT网关绑定多个公网IP并[构建SNAT IP池](https://yq.aliyun.com/articles/533821?spm=a2c4e.11155435.0.0.5e2d49f0MGgXFw)，避免单个公网IP的端口数量限制可能产生的丢包。
 
