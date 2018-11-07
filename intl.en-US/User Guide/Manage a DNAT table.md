@@ -33,7 +33,7 @@ The DNAT function includes port mapping and IP mapping:
 
 To add a DNAT entry, complete these steps:
 
-1.  Log on to the [VPC console](https://vpcnext.console.aliyun.com/nat/).
+1.  Log on to the [VPC console](https://partners-intl.aliyun.com/login-required#/vpc).
 2.  In the left-side navigation pane, click **NAT Gateways**.
 3.  Select the region of the NAT Gateway.
 4.  Click the ID of the target NAT Gateway.
@@ -67,7 +67,7 @@ You must specify the public port, private port, and IP protocol when the port ma
 
 To edit a DNAT entry, complete these steps:
 
-1.  Log on to the [VPC console](https://vpcnext.console.aliyun.com/nat/).
+1.  Log on to the [VPC console](https://partners-intl.aliyun.com/login-required#/vpc).
 2.  In the left-side navigation pane, click **NAT Gateways**.
 3.  Select the region of the NAT Gateway.
 4.  Click the **Configure DNAT** option of the target NAT Gateway.
@@ -77,7 +77,7 @@ To edit a DNAT entry, complete these steps:
 
 To delete a DNAT entry, complete these steps:
 
-1.  Log on to the [VPC console](https://vpcnext.console.aliyun.com/nat/).
+1.  Log on to the [VPC console](https://partners-intl.aliyun.com/login-required#/vpc).
 2.  In the left-side navigation pane, click **NAT Gateways**.
 3.  Select the region of the target NAT Gateway.
 4.  Click the **Configure DNAT** option of the target NAT Gateway.
