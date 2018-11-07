@@ -23,7 +23,7 @@ After configuring an SNAT entry, when an ESC instance in the specified VSwitch i
 
 To add an SNAT entry, complete these steps:
 
-1.  Log on to the [VPC console](https://vpcnext.console.aliyun.com/nat/).
+1.  Log on to the [VPC console](https://partners-intl.aliyun.com/login-required#/vpc).
 2.  In the left-side navigation pane, click **NAT Gateways**.
 3.  Select the region of the NAT Gateway.
 4.  Click the ID of the target the NAT Gateway.
@@ -49,7 +49,7 @@ To add an SNAT entry, complete these steps:
 
 To edit an SNAT entry, complete these steps:
 
-1.  Log on to the [VPC console](https://vpcnext.console.aliyun.com/nat/).
+1.  Log on to the [VPC console](https://partners-intl.aliyun.com/login-required#/vpc).
 2.  In the left-side navigation pane, click **NAT Gateways**.
 3.  Select the region of the NAT Gateway.
 4.  Click the **Configure SNAT** option of the target NAT Gateway.
@@ -59,7 +59,7 @@ To edit an SNAT entry, complete these steps:
 
 To delete an SNAT entry, complete these steps:
 
-1.  Log on to the [VPC console](https://vpcnext.console.aliyun.com/nat/).
+1.  Log on to the [VPC console](https://partners-intl.aliyun.com/login-required#/vpc).
 2.  In the left-side navigation pane, click **NAT Gateways**.
 3.  Select the region of the NAT Gateway, and then click the ID of the target NAT Gateway.
 4.  Click the **Configure SNAT** option of the target NAT Gateway.
