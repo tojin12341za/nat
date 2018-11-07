@@ -12,7 +12,7 @@ Make sure that you have created a NAT Gateway and an EIP.
 
 To bind an EIP to a NAT Gateway, complete these steps:
 
-1.  Log on to the [VPC console](https://vpcnext.console.aliyun.com/nat/).
+1.  Log on to the [VPC console](https://partners-intl.aliyun.com/login-required#/vpc).
 2.  In the left-side navigation pane, click **NAT Gateways**.
 3.  Select the region of the NAT Gateway.
 4.  Find the target the NAT Gateway.
@@ -31,7 +31,7 @@ Make sure the EIP to unbind is not used by any SNAT entries or DNAT entries.
 
 To unbind an EIP, complete these steps:
 
-1.  Log on to the [VPC console](https://vpcnext.console.aliyun.com/nat/).
+1.  Log on to the [VPC console](https://partners-intl.aliyun.com/login-required#/vpc).
 2.  In the left-side navigation pane, click **NAT Gateways**.
 3.  Select the region of the NAT Gateway.
 4.  Find the target the NAT Gateway.
