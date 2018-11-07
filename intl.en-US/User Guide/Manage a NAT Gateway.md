@@ -6,7 +6,7 @@ A NAT Gateway instance is a running NAT Gateway service. You must create a NAT G
 
 To create a NAT Gateway instance, complete these steps:
 
-1.  Log on to the [VPC console](https://vpcnext.console.aliyun.com/nat/).
+1.  Log on to the [VPC console](https://partners-intl.aliyun.com/login-required#/vpc).
 2.  In the left-side navigation pane, click **NAT Gateways**.
 3.  Click **Create NAT Gateway**.
 4.  Configure the NAT Gateway according to the following information and complete the payment.
@@ -25,7 +25,7 @@ To create a NAT Gateway instance, complete these steps:
  |
     |**Specifications**| Select a specification for the NAT Gateway. The specification affects the maximum number of connections and the number of new connections allowed per second for the SNAT proxy service, but does not affect data throughput.
 
- **Note:** The specification has no impact on the number of connections and throughput of the DNAT function. For more information, see [Specifications of NAT Gateway](intl.en-US/User Guide/Specifications of NAT Gateway.md#).
+ **Note:** The specification has no impact on the number of connections and throughput of the DNAT function. For more information, see [Specifications of NAT Gateway](reseller.en-US/User Guide/Specifications of NAT Gateway.md#).
 
  |
     |**Billing Cycle**|Display the billing cycle for NAT Gateway.|
@@ -37,7 +37,7 @@ You can change the specification of a NAT Gateway according to your business nee
 
 To change the specification for a NAT Gateway, complete these steps:
 
-1.  Log on to the [VPC console](https://vpcnext.console.aliyun.com/nat/).
+1.  Log on to the [VPC console](https://partners-intl.aliyun.com/login-required#/vpc).
 2.  In the left-side navigation pane, click **NAT Gateways**.
 3.  Select the region of the NAT Gateway.
 4.  Click the instance ID of the target NAT Gateway.
@@ -48,7 +48,7 @@ To change the specification for a NAT Gateway, complete these steps:
 
 To edit a NAT Gateway, complete these steps:
 
-1.  Log on to the [VPC console](https://vpcnext.console.aliyun.com/nat/).
+1.  Log on to the [VPC console](https://partners-intl.aliyun.com/login-required#/vpc).
 2.  In the left-side navigation pane, click **NAT Gateways**.
 3.  Select the region of the NAT Gateway.
 4.  Click the ID of the target NAT Gateway.
@@ -58,7 +58,7 @@ To edit a NAT Gateway, complete these steps:
 
 To delete a NAT Gateway, complete these steps:
 
-1.  Log on to the [VPC console](https://vpcnext.console.aliyun.com/nat/).
+1.  Log on to the [VPC console](https://partners-intl.aliyun.com/login-required#/vpc).
 2.  In the left-side navigation pane, click **NAT Gateways**.
 3.  Select the region of the target NAT Gateway.
 4.  Find the target NAT Gateway, and then click **Delete**. In the displayed dialog box, click **OK**.
