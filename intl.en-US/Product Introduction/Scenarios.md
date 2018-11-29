@@ -1,12 +1,14 @@
 # Scenarios {#concept_wvh_wjy_ydb .concept}
 
-NAT Gateway is suitable for the scenarios where ECS instances of the VPC network need to access Internet or to provide public services.
+NAT Gateway applies to scenarios where ECS instances of the VPC network need to access Internet or provide public services.
 
-## Scenario 1: set up a high-available SNAT gateway {#section_tlk_zjy_ydb .section}
+## Scenario 1: Set up a high-availability SNAT Gateway {#section_tlk_zjy_ydb .section}
 
-In a system, there are some ECS instances need to access Internet but prevent Internet from initiating a connection to these instances.  In such cases, you can use the SNAT function of NAT Gateway to set up an SNAT gateway.
+In an IT system, some ECS instances need to access the Internet. Out of security concerns, public IPs of these ECS instances cannot be exposed on the Internet. In such cases, you can use the SNAT function of NAT Gateway. For more information, see [Create an SNAT entry](../../../../reseller.en-US/Quick Start/Create an SNAT entry.md#).
 
-## Scenario 2: provide public services {#section_t21_hrj_32b .section}
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13982/15434985574441_en-US.png)
+
+## Scenario 2: Provide public services {#section_t21_hrj_32b .section}
 
 The ECS instances of the VPC network can provide public services by configuring IP mapping or port mapping.
 
