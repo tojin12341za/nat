@@ -12,7 +12,7 @@
 
 完成以下操作，将EIP绑定到NAT网关：
 
-1.  登录[VPC管理控制台](https://vpcnext.console.aliyun.com/nat/)。
+1.  登录[专有网络管理控制台](https://vpcnext.console.aliyun.com/nat/)。
 2.  在左侧导航栏，单击**NAT网关**。
 3.  选择NAT网关的地域。
 4.  找到目标NAT网关实例，然后单击**更多操作** \> **绑定弹性公网IP**。
@@ -30,7 +30,7 @@
 
 完成以下操作，解绑EIP：
 
-1.  登录[VPC管理控制台](https://vpcnext.console.aliyun.com/nat/)。
+1.  登录[专有网络管理控制台](https://vpcnext.console.aliyun.com/nat/)。
 2.  在左侧导航栏，单击**NAT网关**。
 3.  选择NAT网关的地域。
 4.  找到目标NAT网关实例，然后单击**更多操作** \> **解绑弹性公网IP**。
