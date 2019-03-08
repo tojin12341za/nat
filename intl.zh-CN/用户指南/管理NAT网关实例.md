@@ -6,7 +6,7 @@ NAT网关实例是一个运行的NAT网关服务。在使用SNAT和DNAT功能前
 
 完成以下操作，创建NAT网关：
 
-1.  登录[VPC管理控制台](https://vpcnext.console.aliyun.com/nat/)。
+1.  登录[专有网络管理控制台](https://vpcnext.console.aliyun.com/nat/)。
 2.  在左侧导航栏，单击**NAT网关**。
 3.  单击**创建NAT网关**。
 4.  根据以下信息，配置NAT网关并完成支付。
@@ -25,7 +25,7 @@ NAT网关实例是一个运行的NAT网关服务。在使用SNAT和DNAT功能前
  |
     |**规格**| 选择NAT网关的规格。NAT网关的规格会影响SNAT功能的最大连接数和每秒新建连接数，但不会影响数据吞吐量。
 
- **说明：** NAT网关的规格对DNAT功能的连接数和吞吐量没有限制。详情参考[NAT网关规格](intl.zh-CN/用户指南/NAT网关规格.md#)。
+ **说明：** NAT网关的规格对DNAT功能的连接数和吞吐量没有限制。详细说明，请参见[NAT网关规格](intl.zh-CN/用户指南/NAT网关规格.md#)。
 
  |
     |**计费周期**|显示NAT网关的计费周期。|
@@ -37,28 +37,28 @@ NAT网关实例是一个运行的NAT网关服务。在使用SNAT和DNAT功能前
 
 完成以下操作，修改NAT网关规格：
 
-1.  登录[VPC管理控制台](https://vpcnext.console.aliyun.com/nat/)。
+1.  登录[专有网络管理控制台](https://vpcnext.console.aliyun.com/nat/)。
 2.  在左侧导航栏，单击**NAT网关**。
 3.  选择NAT网关的地域。
 4.  单击目标NAT网关的实例ID。
-5.  在NAT网关的详细页面，单击**修改规格**。
+5.  在NAT网关详情页面，单击**修改规格**。
 6.  在**配置变更**区域，选择新的NAT网关规格，然后单击**去开通**完成变更。
 
 ## 编辑NAT网关 {#section_mml_hbz_ydb .section}
 
 完成以下操作，修改NAT网关的名称和描述：
 
-1.  登录[VPC管理控制台](https://vpcnext.console.aliyun.com/nat/)。
+1.  登录[专有网络管理控制台](https://vpcnext.console.aliyun.com/nat/)。
 2.  在左侧导航栏，单击**NAT网关**。
 3.  选择NAT网关的地域。
 4.  单击目标NAT网关的实例ID。
-5.  在NAT网关的详细页面，分别单击名称和描述右侧的**编辑**，在弹出的对话框中分别输入NAT网关的名称和描述信息，然后单击**确定**完成修改。
+5.  在NAT网关详情页面，分别单击名称和描述右侧的**编辑**，在弹出的对话框中分别输入NAT网关的名称和描述信息，然后单击**确定**完成修改。
 
 ## 删除NAT网关 {#section_rf4_2cz_ydb .section}
 
 完成以下操作，删除NAT网关：
 
-1.  登录[VPC管理控制台](https://vpcnext.console.aliyun.com/nat/)。
+1.  登录[专有网络管理控制台](https://vpcnext.console.aliyun.com/nat/)。
 2.  在左侧导航栏，单击**NAT网关**。
 3.  选择NAT网关的地域。
 4.  找到目标NAT网关，确保NAT网关中已经没有SNAT、DNAT条目和绑定的EIP后，单击**删除**。在弹出的对话框中，单击**确定**。
