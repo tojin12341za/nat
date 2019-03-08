@@ -6,7 +6,7 @@
 
 **说明：** 如果您在2018年1月26日之前购买过NAT带宽包，确保NAT带宽包中有可用的公网IP。
 
-1.   登录[VPC管理控制台](https://vpcnext.console.aliyun.com/nat/)。 
+1.  登录[专有网络管理控制台](https://vpcnext.console.aliyun.com/nat/)。 
 2.   在左侧导航栏，单击**NAT网关**。 
 3.   选择NAT网关的地域。 
 4.   单击目标NAT网关的实例ID。 
