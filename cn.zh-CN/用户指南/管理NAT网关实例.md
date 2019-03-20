@@ -28,7 +28,7 @@ NAT网关实例是一个运行的NAT网关服务。在使用SNAT和DNAT功能前
  **说明：** NAT网关的规格对DNAT功能的连接数和吞吐量没有限制。详细说明，请参见[NAT网关规格](intl.zh-CN/用户指南/NAT网关规格.md#)。
 
  |
-    |**计费周期**|显示NAT网关的计费周期。|
+    |**计费周期**|选择NAT网关的计费周期。|
 
 
 ## 更改NAT网关规格 {#section_jml_hbz_ydb .section}
