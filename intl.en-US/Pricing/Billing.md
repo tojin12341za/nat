@@ -15,5 +15,5 @@ NAT Gateway is a service entity. It cannot access the Internet itself. Therefore
 
 After creating a NAT Gateway, you must bind an EIP to it to access the Internet. Once an EIP is bound, the public network fee of the NAT Gateway is billed on the EIP.
 
-**Note:** If your account has purchased a shared bandwidth package, you can still use the public IP of the bandwidth package. In this case, the public network fee is billed on the bandwidth package. For more information, see [Billing of NAT bandwidth package](../../../../intl.en-US/Bandwidth Package/Billing of NAT bandwidth package.md#).
+**Note:** If your account has purchased a shared bandwidth package, you can still use the public IP of the bandwidth package. In this case, the public network fee is billed on the bandwidth package. For more information, see [Billing of NAT bandwidth package](../../../../../intl.en-US/Bandwidth Package/Billing of NAT bandwidth package.md#).
 
