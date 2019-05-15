@@ -15,7 +15,7 @@ NAT网关是一款企业级的VPC公网网关，提供SNAT功能，为VPC内无�
 
 **说明：** 对于2017年11月3日 23：59分之前账号下存在NAT带宽包的全部用户，如想创建SNAT IP地址池，请参见[创建SNAT IP地址池](https://yq.aliyun.com/articles/533821)。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/217943/155791335647136_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/217943/155791369947136_zh-CN.png)
 
 ## 步骤一 创建NAT网关 {#section_kaj_h2e_nto .section}
 
@@ -80,7 +80,7 @@ NAT网关是一款企业级的VPC公网网关，提供SNAT功能，为VPC内无�
 
 分别登录两台设置了SNAT规则的交换机下的ECS实例，查看出网的源IP地址。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/217943/155791335647157_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/217943/155791369947157_zh-CN.png)
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/217943/155791335647158_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/217943/155791369947158_zh-CN.png)
 
