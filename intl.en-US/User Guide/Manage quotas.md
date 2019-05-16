@@ -2,9 +2,9 @@
 
 You can query the number of remaining resources in your quota through the VPC console. If the remaining quota number is insufficient for your requirements, you can open a ticket to apply for an increase to your quota.
 
-1.  Log on to the [VPC console](https://partners-intl.console.aliyun.com/#/vpc). 
-2.  In the left-side navigation pane, click **Quota Management**. 
-3.  On the Quota Management page, click the NAT Gateways tab to view the quota usage of VPCs under your account. 
+1.  Log on to the [VPC console](https://partners-intl.console.aliyun.com/#/vpc).
+2.  In the left-side navigation pane, click **Quota Management**.
+3.  On the Quota Management page, click the NAT Gateways tab to view the quota usage of VPCs under your account.
 4.  To increase your resource quota, click **Apply** in the **Actions** column. Then, enter the following information. 
 
     -   **Quantity for Application**: the number of resources you require. You must enter a number that is larger than the current quota. For more information about the resource limits of NAT Gateway, see [Limits](../../../../reseller.en-US/Product Introduction/Limits.md#).
