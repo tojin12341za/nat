@@ -15,7 +15,7 @@ NAT网关是一款企业级的VPC公网网关，提供SNAT功能，为VPC内无�
 
 **说明：** 对于2017年11月3日 23：59分之前账号下存在NAT带宽包的全部用户，如想创建SNAT IP地址池，请参见[创建SNAT IP地址池](https://yq.aliyun.com/articles/533821)。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/217943/155806580247136_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/217943/155833218647136_zh-CN.png)
 
 ## 步骤一 创建NAT网关 {#section_kaj_h2e_nto .section}
 
@@ -74,13 +74,41 @@ NAT网关是一款企业级的VPC公网网关，提供SNAT功能，为VPC内无�
 
 ## 步骤四 创建SNAT条目 {#section_b2u_tma_3wd .section}
 
-调用CreateSnatEntry接口创建SNAT条目，将多个EIP加入到一个SNAT地址池。详细信息，请参见[CreateSnatEntry](../../../../../intl.zh-CN/API参考/NAT网关/CreateSnatEntry.md#)。
+完成以下操作，创建SNAT条目，将多个EIP加入到一个SNAT地址池。
+
+1.  登录[阿里云OpenAPI Explorer](https://api.aliyun.com)。
+2.  在左侧导航栏中，单击**专有网络**。
+3.  在搜索框中搜索**CreateSnatEntry**，然后单击**CreateSnatEntry**。
+4.  根据以下信息，配置CreateSnatEntry参数，然后单击**发起调用**。
+
+    -   **RegionId**：NAT网关所在的地域ID。
+    -   **SnatTableId**：SNAT表ID。
+    -   **SnatIp**：添加到SNAT地址池中的公网IP地址，多个IP之间用逗号（,）隔开。
+    -   **SourceVSwitchId**（可选）：需要公网访问的交换机的ID。
+    -   **SourceCIDR**（可选）：指定的交换机的网段。
+    -   **SnatEntryName**（可选）：SNAT条目的名称。
+    详细信息，请参见[CreateSnatEntry](../../../../../intl.zh-CN/API参考/NAT网关/CreateSnatEntry.md#)。
+
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/217943/155833218647549_zh-CN.png)
+
+
+如果您已经创建了SNAT条目，您可以通过ModifySnatEntry接口修改指定的SNAT条目。ModifySnatEntry接口参数如下：
+
+-   **RegionId**：NAT网关所在的地域ID。
+-   **SnatTableId**：SNAT表ID。
+-   **SnatEntryId**：SNAT条目ID。
+-   **SnatIp**：添加到SNAT地址池中的公网IP地址，多个IP之间用逗号（,）隔开。
+-   **SnatEntryName**：SNAT条目的名称。
+
+详细信息，请参见[ModifySnatEntry](../../../../../intl.zh-CN/API参考/NAT网关/ModifySnatEntry.md#)。
+
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/217943/155833218647556_zh-CN.png)
 
 ## 步骤五 测试访问 {#section_xes_80x_bgv .section}
 
 分别登录两台设置了SNAT规则的交换机下的ECS实例，查看出网的源IP地址。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/217943/155806580247157_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/217943/155833218647157_zh-CN.png)
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/217943/155806580247158_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/217943/155833218747158_zh-CN.png)
 
