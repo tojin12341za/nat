@@ -8,7 +8,7 @@
 
 ## 为什么在NAT网关控制台不能绑定EIP？ {#section_hp1_eoj_3e0 .section}
 
-对于2017年11月3日23：59分之前账号下存在NAT带宽包的全部用户，仍然为NAT带宽包的使用方式。默认无法使用EIP绑定NAT网关的功能，如需使用EIP绑定NAT网关功能需要提交工单。
+对于2017年11月3日23：59分之前账号下存在NAT带宽包的全部用户，仍然为NAT带宽包的使用方式。默认无法使用EIP绑定NAT网关的功能，如需使用EIP绑定NAT网关功能请提交工单。
 
 ## EIP支持创建SNAT IP地址池吗？ {#section_hij_hvv_z0w .section}
 
