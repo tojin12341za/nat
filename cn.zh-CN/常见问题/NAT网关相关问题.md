@@ -8,6 +8,9 @@
 -   [NAT网关支持从后付费类型转换为预付费吗？](#section_qtr_l14_s8u)
 -   [NAT网关支持从预付费类型转换为后付费吗？](#section_bfh_56b_d4r)
 -   [NAT网关支持查看每个交换机的流量吗？](#section_vcs_0wp_vsg)
+-   [ECS实例分配了固定公网IP且创建了SNAT条目，如何实现ECS实例优先通过SNAT的公网IP访问互联网？](#section_534_7dp_bs8)
+-   [ECS实例绑定了EIP且创建了SNAT条目，如何实现ECS实例优先通过SNAT的公网IP访问互联网？](#section_u9j_9ts_jo0)
+-   [ECS实例设置了DNAT IP映射且创建了SNAT条目，如何实现ECS实例优先通过SNAT的公网IP访问互联网？](#section_0wq_838_rp7)
 
 ## 一个公网IP可以同时设置DNAT和SNAT规则吗？ {#section_vlv_m2f_2bf .section}
 
@@ -46,4 +49,16 @@
 不支持。
 
 您可以为每个交换机绑定一个EIP，然后通过查看EIP获取交换机的流量。
+
+## ECS实例分配了固定公网IP且创建了SNAT条目，如何实现ECS实例优先通过SNAT的公网IP访问互联网？ {#section_534_7dp_bs8 .section}
+
+您可以为ECS实例单独分配一块弹性网卡，并将固定公网IP转为EIP，然后将EIP绑定到弹性网卡，以实现ECS实例优先通过SNAT的公网IP访问互联网，互联网通过弹性网卡主动访问ECS实例。详细信息，请参见[为已分配固定公网IP的ECS实例统一公网出口IP](../../../../cn.zh-CN/最佳实践/统一公网出口IP/为已分配固定公网IP的ECS实例统一公网出口IP.md#)。
+
+## ECS实例绑定了EIP且创建了SNAT条目，如何实现ECS实例优先通过SNAT的公网IP访问互联网？ {#section_u9j_9ts_jo0 .section}
+
+您可以为ECS实例单独分配一块弹性网卡，然后将EIP与ECS实例解绑并将EIP绑定到弹性网卡，以实现ECS实例优先通过SNAT的公网IP访问互联网，互联网通过弹性网卡主动访问ECS实例。详细信息，请参见[为绑定了EIP的ECS实例统一公网出口IP](../../../../cn.zh-CN/最佳实践/统一公网出口IP/为绑定了EIP的ECS实例统一公网出口IP.md#)。
+
+## ECS实例设置了DNAT IP映射且创建了SNAT条目，如何实现ECS实例优先通过SNAT的公网IP访问互联网？ {#section_0wq_838_rp7 .section}
+
+您可以为ECS实例单独分配一块弹性网卡，然后移除NAT网关中的DNAT IP映射条目并创建新的DNAT条目，建立NAT网关上的公网IP与弹性网卡的映射关系，以实现ECS实例优先通过SNAT的公网IP访问互联网，互联网通过弹性网卡主动访问ECS实例。详细信息，请参见[为设置了DNAT IP映射的ECS实例统一公网出口IP](../../../../cn.zh-CN/最佳实践/统一公网出口IP/为设置了DNAT IP映射的ECS实例统一公网出口IP.md#)。
 
