@@ -6,13 +6,13 @@ VPC内的ECS实例通过公网IP访问互联网，统一ECS实例的公网出口
 
 NAT网关提供SNAT功能，为VPC内无公网IP的ECS实例提供访问互联网的代理服务。如果VPC内某些ECS实例设置了DNAT IP映射（IP映射即所有端口映射），这些ECS实例会优先通过DNAT条目中的公网IP访问互联网，而VPC内的其他ECS实例通过NAT网关的SNAT功能代理访问互联网，造成VPC内ECS实例的公网出口IP不一致，不利于统一管理业务。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/570564/156091253549565_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/570564/156091254649565_zh-CN.png)
 
 您可以通过为ECS实例绑定弹性网卡来解决ECS实例公网出口IP不统一的问题。
 
 如下图，您可以为ECS实例单独分配一块弹性网卡，然后移除NAT网关中的DNAT IP映射条目并创建新的DNAT条目，建立NAT网关上的公网IP与弹性网卡的映射关系，以实现互联网通过弹性网卡主动访问ECS实例，ECS实例优先通过NAT网关的SNAT功能访问互联网。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/570109/156091253549551_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/570109/156091254649551_zh-CN.png)
 
 ## 前提条件 {#section_m62_6sg_bz7 .section}
 
@@ -85,7 +85,7 @@ NAT网关提供SNAT功能，为VPC内无公网IP的ECS实例提供访问互联�
 
     若界面上出现`Welcome to Alibaba Cloud Elastic Compute Service !`时，表示您已经成功连接到实例。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/570109/156091253549595_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/570109/156091254649595_zh-CN.png)
 
 
 完成以下操作，测试ECS实例是否可以通过NAT网关的SNAT功能主动访问互联网。本操作以在linux实例上查看公网出口IP为例。
@@ -95,6 +95,6 @@ NAT网关提供SNAT功能，为VPC内无公网IP的ECS实例提供访问互联�
 
     若公网出口IP与NAT网关SNAT条目中的IP一致，即ECS实例优先通过NAT网关的SNAT功能主动访问互联网。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/570109/156091253549596_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/570109/156091254749596_zh-CN.png)
 
 
