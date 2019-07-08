@@ -2,7 +2,7 @@
 
 You can configure DNAT to maps a public IP address to a private IP address in the CIDR block of the target ECS instance, so that the ECS instance can provide Internet services. DNAT supports both port mapping and IP mapping.
 
-A NAT Gateway is created and the NAT Gateway is associated with an EIP. For more information, see [Create a NAT Gateway](../reseller.en-US/Quick Start/Create a NAT Gateway.md#) and [Associate an EIP](../reseller.en-US/Quick Start/Associate an EIP.md#).
+A NAT Gateway is created and the NAT Gateway is associated with an EIP. For more information, see [Create a NAT Gateway](../reseller.en-US/Quick Start/Create a NAT Gateway.md#) and [Associate an EIP with a NAT Gateway](../reseller.en-US/Quick Start/Associate an EIP with a NAT Gateway.md#).
 
 **Note:** If your account has purchased a bandwidth package before January 26, 2018, make sure there is an available public IP address in the bandwidth package.
 
