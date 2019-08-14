@@ -17,7 +17,7 @@ The fee of a Pay-As-You-Go NAT Gateway instance = unit instance price \(USD/day\
 |Region|Small \(USD/day\)|Middle \(USD/day\)|Large \(USD/day\)|XLarge. 1 \(USD/day\)|
 |:-----|:----------------|:-----------------|:----------------|:--------------------|
 |China \(Qingdao\) China \(Beijing\) / China \(Zhangjiakou\) / China \(Hohhot\) / China \(Hangzhou\) China \(Shanghai\) / China \(Shenzhen\)|1.829|3.505|6.858|12.192|
-|US \(Virginia\) / Hong Kong|2.438|4.572|8.991|15.849|
+|US \(Virginia\) / China \(Hong Kong\)|2.438|4.572|8.991|15.849|
 |Japan \(Tokyo\)|2.926|5.608|10.972|19.507|
 |Singapore|2.743|5.334|10.363|18.287|
 |Australia \(Sydney\)|3.657|5.334|13.716|24.383|
