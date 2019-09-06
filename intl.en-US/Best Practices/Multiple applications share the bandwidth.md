@@ -35,21 +35,21 @@ that the private IP addresses of the ECS instances are as follows:
 
     The tool can be directly downloaded by running the wget command in Linux.
 
-    ```
+    ``` {#codeblock_q00_zyh_5vx}
     wget http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/attach/42691/cn_zh/1468947102311/api.py
     ```
 
 2.  Create an AccessKey.
 
-    You need to create an AccessKey for the account that calls the API action. For more information, see [Create an AccessKey](https://help.aliyun.com/document_detail/53045.html?spm=a2c4g.11186623.2.5.kwCDtJ).
+    You need to create an AccessKey for the account that calls the API action.
 
 3.  Configure the AccessKey for the CLI tool.
 
-## Step 1: Create a NAT Gateway { .section}
+## Step 1: Create a NAT Gateway {#section_omu_q61_yk3 .section}
 
 1.  Call CreateNatGateway to create a NAT Gateway.
 
-    ```
+    ``` {#codeblock_n6x_4uc_zfu}
     [admin@tester:xxx]$ python api.py CreateNatGateway RegionId=cn-shanghai VpcId=vpc-11af8lxxx BandwidthPackage. 1.IpCount=4 BandwidthPackage. 1.Bandwidth=150 BandwidthPackage. 1.Zone=cn-shanghai-a Name=MyNatGW Description="My first NAT Gateway"
      =====Request URL======
      https://ecs.aliyuncs.com/?SignatureVersion=1.0&VpcId=vpc-11af8lxxx&Name=MyNatGW&Format=json&TimeStamp=2016-05-23T03%3A26%3A21Z&BandwidthPackage. 1.IpCount=5&RegionId=cn-shanghai&AccessKeyId=jZgi0oyrQXXXXXXX&SignatureMethod=HMAC-SHA1&Version=2014-05-26&Signature=I4KKhWgjJdImTqk4rCifAB3LbLw%3D&action=CreateNatGateway&SignatureNonce=1ebae49c-2096-11e6-b781-2cf0ee28adf2&BandwidthPackage. 1.Bandwidth=150&BandwidthPackage. 1.Zone=cn-shanghai-a&Description=My+first+NAT+Gateway
@@ -72,7 +72,7 @@ that the private IP addresses of the ECS instances are as follows:
 
 2.  Call DescribeNatGateways to view the detailed information of a NAT Gateway.
 
-    ```
+    ``` {#codeblock_g25_mm9_5fr}
     [admin@tester:xxx]$ python api.py DescribeNatGateways RegionId=cn-shanghai VpcId=vpc-11af8lxxx
      =====Request URL======
      https://ecs.aliyuncs.com/?SignatureVersion=1.0&VpcId=vpc-11af8lxxx&Format=json&TimeStamp=2016-05-23T03%3A27%3A14Z&RegionId=cn-shanghai&AccessKeyId=jZgi0oyrQ6ihgKp9&SignatureMethod=HMAC-SHA1&Version=2014-05-26&Signature=JvXErso9g0fZdRTgBtNLepe%2F1e4%3D&action=DescribeNatGateways&SignatureNonce=3e1424eb-2096-11e6-bc31-2cf0ee28adf2
@@ -114,7 +114,7 @@ that the private IP addresses of the ECS instances are as follows:
 
 3.  Call DescribeBandwidthPackages to view the detailed information of the created shared bandwidth packages.
 
-    ```
+    ``` {#codeblock_x10_08d_otn}
     [admin@tester:xxx]$ python api.py DescribeBandwidthPackages RegionId=cn-shanghai NatGatewayId=ngw-112za33e4
      =====Request URL======
      https://ecs.aliyuncs.com/?SignatureVersion=1.0&Format=json&TimeStamp=2016-05-23T03%3A33%3A30Z&RegionId=cn-shanghai&NatGatewayId=ngw-112za33e4&AccessKeyId=jZgi0oyrQ6ihgKp9&SignatureMethod=HMAC-SHA1&Version=2014-05-26&Signature=KN0C2Q4TUZtfECBn1c2lOdBzrb8%3D&action=DescribeBandwidthPackages&SignatureNonce=1e8941ae-2097-11e6-acbb-2cf0ee28adf2
@@ -172,7 +172,7 @@ that the private IP addresses of the ECS instances are as follows:
     ```
 
 
-## Step 2: Configure DNAT entries { .section}
+## Step 2: Configure DNAT entries {#section_z9d_xqo_qbd .section}
 
 1.  Call CreateForwardEntry to add the following forwarding entries.
 
@@ -184,7 +184,7 @@ that the private IP addresses of the ECS instances are as follows:
     |IP3|443|ecs-ip4|443|TCP|
     |IP4|22|ecs-ip5|22|TCP|
 
-    ```
+    ``` {#codeblock_z1j_due_go5}
     [admin@tester:xxx]$ python api.py CreateForwardEntry RegionId=cn-shanghai ForwardTableId=ftb-11tc6xgmv ExternalIp=139.xxx.xx. 107 ExternalPort=Any InternalIp=192.168.1.1 InternalPort=Any IpProtocol=Any
     =====Request URL======
     https://ecs.aliyuncs.com/?ExternalIp=139.xxx.xx. 107&SignatureVersion=1.0&Format=json&TimeStamp=2016-05-23T03%3A53%3A18Z&RegionId=cn-shanghai&ExternalPort=Any&InternalIp=192.168.1.1&Signature=iR4GSzhJQtowMJOj%2FRth3ABP4FA%3D&AccessKeyId=jZgi0oyrQ6ihgKp9&ForwardTableId=ftb-11tc6xgmv&SignatureMethod=HMAC-SHA1&Version=2014-05-26&IpProtocol=Any&action=CreateForwardEntry&SignatureNonce=e2ceae11-2099-11e6-b548-2cf0ee28adf2&InternalPort=Any 
@@ -251,7 +251,7 @@ that the private IP addresses of the ECS instances are as follows:
 
 2.  Call DescribeForwardTableEntries to view the added DNAT entries.
 
-    ```
+    ``` {#codeblock_1x5_t1i_8ar}
     [admin@tester:xxx]$ python api.py DescribeForwardTableEntries RegionId=cn-shanghai ForwardTableId=ftb-11tc6xgmv
      =====Request URL======
      https://ecs.aliyuncs.com/?SignatureVersion=1.0&Format=json&TimeStamp=2016-05-23T03%3A56%3A18Z&RegionId=cn-shanghai&AccessKeyId=jZgi0oyrQ6ihgKp9&ForwardTableId=ftb-11tc6xgmv&SignatureMethod=HMAC-SHA1&Version=2014-05-26&Signature=x4%2B6oNYxIRBmND8rcIbJM9EJ8ts%3D&action=DescribeForwardTableEntries&SignatureNonce=4db93223-209a-11e6-81eb-2cf0ee28adf2
