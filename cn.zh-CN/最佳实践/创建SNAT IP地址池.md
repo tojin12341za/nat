@@ -4,8 +4,8 @@
 
 ## 前提条件 {#section_au7_r96_xlc .section}
 
--   您已经创建了专有网络和交换机。详细信息，请参见[创建专有网络和交换机](../../../../cn.zh-CN/用户指南/专有网络和子网/管理专有网络.md#section_ufw_rhv_rdb)。
--   您已经申请了待加入到SNAT地址池的EIP。详细信息，请参见[申请EIP](../../../../cn.zh-CN/用户指南/申请EIP/申请新EIP.md#)。
+-   您已经创建了专有网络和交换机。详细信息，请参见[创建专有网络和交换机](../../../../intl.zh-CN/用户指南/专有网络和子网/管理专有网络.md#section_ufw_rhv_rdb)。
+-   您已经申请了待加入到SNAT地址池的EIP。详细信息，请参见[申请EIP](../../../../intl.zh-CN/用户指南/申请EIP/申请新EIP.md#)。
 
 ## 背景信息 {#section_doq_73k_duj .section}
 
@@ -13,9 +13,7 @@ NAT网关是一款企业级的VPC公网网关，提供SNAT功能，为VPC内无�
 
 您可以选择添加多个EIP到一个SNAT地址池中，当VPC ECS实例主动发起对外的访问连接时，VPC ECS实例会随机通过SNAT地址池中的EIP访问互联网。
 
-**说明：** 对于2017年11月3日 23：59分之前账号下存在NAT带宽包的全部用户，如想创建SNAT IP地址池，请参见[创建SNAT IP地址池](https://yq.aliyun.com/articles/533821)。
-
-![SNAT IP地址池](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/217943/156351510947136_zh-CN.png)
+![SNAT IP地址池](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/217943/156375763947136_zh-CN.png)
 
 ## 步骤一 创建NAT网关 {#section_kaj_h2e_nto .section}
 
@@ -34,7 +32,7 @@ NAT网关是一款企业级的VPC公网网关，提供SNAT功能，为VPC内无�
         -   查看该VPC中是否存在目标网段为0.0.0.0/0的自定义路由。若存在，需要删除该路由条目。
     -   **规格**：选择NAT网关的规格。NAT网关的规格会影响SNAT功能的最大连接数和每秒新建连接数，但不会影响数据吞吐量。
 
-        **说明：** NAT网关的规格对DNAT功能的连接数和吞吐量没有限制。详细信息，请参见[NAT网关规格](../../../../cn.zh-CN/用户指南/NAT网关规格.md#)。
+        **说明：** NAT网关的规格对DNAT功能的连接数和吞吐量没有限制。详细信息，请参见[NAT网关规格](../../../../intl.zh-CN/用户指南/NAT网关规格.md#)。
 
     -   **计费周期**：选择NAT网关的计费周期。
 
@@ -92,7 +90,7 @@ NAT网关是一款企业级的VPC公网网关，提供SNAT功能，为VPC内无�
 
 分别登录两台设置了SNAT规则的ECS实例，查看出网的源IP地址。
 
-![ECS1查看出网的源IP地址](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/217943/156351510947157_zh-CN.png)
+![ECS1查看出网的源IP地址](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/217943/156375763947157_zh-CN.png)
 
-![ECS2查看出网的源IP地址](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/217943/156351511047158_zh-CN.png)
+![ECS2查看出网的源IP地址](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/217943/156375763947158_zh-CN.png)
 

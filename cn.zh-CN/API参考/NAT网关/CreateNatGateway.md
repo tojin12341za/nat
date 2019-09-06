@@ -1,4 +1,4 @@
-# CreateNatGateway {#doc_api_951863 .reference}
+# CreateNatGateway {#doc_api_Vpc_CreateNatGateway .reference}
 
 使用CreateNatGateway接口创建一个NAT网关。
 
@@ -8,9 +8,9 @@
 -   NAT网关创建后，系统会在VPC的路由表中自动添加一条目标网段为0.0.0.0/0，下一跳为NAT网关的路由条目，用于将流量路由到NAT网关。
 -   如果在创建NAT网关前，VPC的路由表中已经存在一条目标网段为0.0.0.0/0的路由条目，请先删除该路由条目。否则，无法创建NAT网关。
 
-## 调试 {#apiExplorer .section}
+## 调试 {#api_explorer .section}
 
-前往【[API Explorer](https://api.aliyun.com/#product=Vpc&api=CreateNatGateway)】在线调试，API Explorer 提供在线调用 API、动态生成 SDK Example 代码和快速检索接口等能力，能显著降低使用云 API 的难度，强烈推荐使用。
+[您可以在OpenAPI Explorer中直接运行该接口，免去您计算签名的困扰。运行成功后，OpenAPI Explorer可以自动生成SDK代码示例。](https://api.aliyun.com/#product=Vpc&api=CreateNatGateway&type=RPC&version=2016-04-28)
 
 ## 请求参数 {#parameters .section}
 
@@ -75,7 +75,7 @@
 
  |
 
-## 返回参数 {#resultMapping .section}
+## 返回数据 {#resultMapping .section}
 
 |名称|类型|示例值|描述|
 |--|--|---|--|
@@ -116,13 +116,12 @@ https://vpc.aliyuncs.com/?Action=CreateNatGateway
 
 ``` {#xml_return_success_demo}
 <CreateNatGatewayResponse>
-  <BandwidthPackageIds>bwp-**************</BandwidthPackageIds>
-  <forwardTableIds>ftb-**************</forwardTableIds>
-  <natGatewayId>ngw-**************</natGatewayId>
-  <snatTableIds>stb-**************</snatTableIds>
-  <RequestId>E43E51F2-344F-4685-8DF5-30EB298CFA81</RequestId>
-</CreateNatGatewayResponse>
-
+      <BandwidthPackageIds>bwp-**************</BandwidthPackageIds>
+	  <forwardTableIds>ftb-**************</forwardTableIds>
+	  <natGatewayId>ngw-**************</natGatewayId>
+	  <snatTableIds>stb-**************</snatTableIds>
+	  <RequestId>E43E51F2-344F-4685-8DF5-30EB298CFA81</RequestId>
+	</CreateNatGatewayResponse>
 ```
 
 `JSON` 格式
@@ -149,7 +148,10 @@ https://vpc.aliyuncs.com/?Action=CreateNatGateway
 |--------|---|----|--|
 |400|InvalidVPCStatus|vpc incorrect status.|该 VPC 状态非法，请您检查 VPC 状态是否输入正确。|
 |404|InvalidRegionId.NotFound|The specified RegionId does not exist in our records.|指定的 RegionId 不存在，请您检查此产品在该地域是否可用。|
+|400|InvalidNatGatewayName.MalFormed|NatGateway name is not valid.|网关名称不合法。|
+|400|InvalidNatGatewayDescription.MalFormed|NatGateway description is not valid.|网关描述不合法。|
 |400|MissingParameter.BandwidthPackage|only support one BandwidthPackage be created with NatGateway.|必须指定一个共享带宽包。|
+|404|InvalidVpcId.NotFound|Specified value of VpcId is not found in our record.|该 VPC 不存在，请您检查输入的 VPC 是否正确。|
 |400|MissingParameter|Miss mandatory parameter.|缺少必要参数,请您检查必填参数是否都已填后再进行操作。|
 |404|InvalidZoneId.NotFound|Specified value of ZoneId is not exists.|该可用区不存在。|
 |404|InvalidZoneId.NotFound|Can not find ZoneId for allocated ip.|该IP的可用区不正确。|
@@ -163,5 +165,5 @@ https://vpc.aliyuncs.com/?Action=CreateNatGateway
 |400|VpcStatusError|The Vpc is creating .|正在创建VPC。|
 |400|InvalidParameter.Spec.ValueNotSupported|The specified Spec is not valid.|该规格不合法。|
 
-[查看本产品错误码](https://error-center.aliyun.com/status/product/Vpc)
+访问[错误中心](https://error-center.aliyun.com/status/product/Vpc)查看更多错误码。
 

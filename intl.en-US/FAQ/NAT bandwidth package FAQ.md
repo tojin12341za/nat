@@ -9,7 +9,7 @@
 
 ## Why cannot I buy a NAT bandwidth package in the NAT Gateway console? {#section_bfi_b1c_dzq .section}
 
-If your account did not include a NAT bandwidth package before January 26, 2018, you can only associate EIPs with a NAT Gateway. For more information, see [Associate and disassociate EIPs](../../../../intl.en-US/User Guide/Associate and disassociate EIPs.md#).
+If your account did not include a NAT bandwidth package before January 26, 2018, you can only associate EIPs with a NAT Gateway. For more information, see [Associate and disassociate EIPs](../../../../reseller.en-US/User Guide/Associate and disassociate EIPs.md#).
 
 ## How many NAT bandwidth packages can be associated with a NAT Gateway? {#section_zye_aty_rlc .section}
 

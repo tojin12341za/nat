@@ -1,4 +1,4 @@
-# ModifyNatGatewaySpec {#doc_api_951857 .reference}
+# ModifyNatGatewaySpec {#doc_api_Vpc_ModifyNatGatewaySpec .reference}
 
 使用ModifyNatGatewaySpec接口修改NAT网关的规格。
 
@@ -36,9 +36,9 @@ NAT网关规格与SNAT性能的关系如下表所示。
 
 |
 
-## 调试 {#apiExplorer .section}
+## 调试 {#api_explorer .section}
 
-前往【[API Explorer](https://api.aliyun.com/#product=Vpc&api=ModifyNatGatewaySpec)】在线调试，API Explorer 提供在线调用 API、动态生成 SDK Example 代码和快速检索接口等能力，能显著降低使用云 API 的难度，强烈推荐使用。
+[您可以在OpenAPI Explorer中直接运行该接口，免去您计算签名的困扰。运行成功后，OpenAPI Explorer可以自动生成SDK代码示例。](https://api.aliyun.com/#product=Vpc&api=ModifyNatGatewaySpec&type=RPC&version=2016-04-28)
 
 ## 请求参数 {#parameters .section}
 
@@ -68,7 +68,7 @@ NAT网关规格与SNAT性能的关系如下表所示。
 
  |
 
-## 返回参数 {#resultMapping .section}
+## 返回数据 {#resultMapping .section}
 
 |名称|类型|示例值|描述|
 |--|--|---|--|
@@ -96,9 +96,8 @@ https://vpc.aliyuncs.com/?Action=ModifyNatGatewaySpec
 
 ``` {#xml_return_success_demo}
 <ModifyNatGatewaySpecResponse>
-  <RequestId>DBD4E4A2-786E-4BD2-8EB6-107FFC2B5B7D</RequestId>
+      <RequestId>DBD4E4A2-786E-4BD2-8EB6-107FFC2B5B7D</RequestId>
 </ModifyNatGatewaySpecResponse>
-
 ```
 
 `JSON` 格式
@@ -118,5 +117,5 @@ https://vpc.aliyuncs.com/?Action=ModifyNatGatewaySpec
 |400|NATGW\_MODIFY\_SPEC\_SAME|The specified Spec is same with now.|该规格和当前规格一样。|
 |400|InvalidParameter.Spec.ValueNotSupported|The specified Spec is not valid.|该规格不合法。|
 
-[查看本产品错误码](https://error-center.aliyun.com/status/product/Vpc)
+访问[错误中心](https://error-center.aliyun.com/status/product/Vpc)查看更多错误码。
 

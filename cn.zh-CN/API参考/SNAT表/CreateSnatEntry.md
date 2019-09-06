@@ -8,13 +8,13 @@
 -   每个交换机和ECS实例只能属于一个SNAT条目。
 -   如果交换机中存在HAVIP实例，则无法添加SNAT条目。
 -   SNAT条目中的公网IP（SnatIp）需满足以下条件：
-    -   对于2018年1月26日之前账户下存在NAT带宽包的用户，SnatIp必须是该NAT网关的NAT带宽包中的公网IP地址。
-    -   对于2018年1月26日之前账户下不存在NAT带宽包的用户，SnatIp必须是绑定了该NAT网关的弹性公网IP。
+    -   对于2017年11月3日之前账户下存在NAT带宽包的用户，SnatIp必须是该NAT网关的NAT带宽包中的公网IP地址。
+    -   对于2017年11月3日之前账户下不存在NAT带宽包的用户，SnatIp必须是绑定了该NAT网关的弹性公网IP。
     -   一个公网IP不能同时用于DNAT条目和SNAT条目。
 
-## 调试 {#apiExplorer .section}
+## 调试 {#api_explorer .section}
 
-前往【[API Explorer](https://api.aliyun.com/#product=Vpc&api=CreateSnatEntry)】在线调试，API Explorer 提供在线调用 API、动态生成 SDK Example 代码和快速检索接口等能力，能显著降低使用云 API 的难度，强烈推荐使用。
+[您可以在OpenAPI Explorer中直接运行该接口，免去您计算签名的困扰。运行成功后，OpenAPI Explorer可以自动生成SDK代码示例。](https://api.aliyun.com/#product=Vpc&api=CreateSnatEntry&type=RPC&version=2016-04-28)
 
 ## 请求参数 {#parameters .section}
 
@@ -80,10 +80,9 @@ https://vpc.aliyuncs.com/?Action=CreateSnatEntry
 
 ``` {#xml_return_success_demo}
 <CreateSnatEntryResponse>
-  <RequestId>2315DEB7-5E92-423A-91F7-4C1EC9AD97C3</RequestId>
-  <SnatEntryId>snat-119smw5tkx****</SnatEntryId>
+      <RequestId>2315DEB7-5E92-423A-91F7-4C1EC9AD97C3</RequestId>
+      <SnatEntryId>snat-119smw5tkx****</SnatEntryId>
 </CreateSnatEntryResponse>
-
 ```
 
 `JSON` 格式
@@ -114,5 +113,5 @@ https://vpc.aliyuncs.com/?Action=CreateSnatEntry
 |400|Forbindden|The specified Instance already bind eip|该实例已经绑定了 EIP，请将 ECS 实例与 EIP 解绑后再添加该端口转发规则。|
 |400|InvalidParameter.Name.Malformed|The specified Name is not valid.|该名称不合法，请您按照正确的格式书写名称。|
 
-访问[错误中心](https://error-center.alibabacloud.com/status/product/Vpc)查看更多错误码。
+访问[错误中心](https://error-center.aliyun.com/status/product/Vpc)查看更多错误码。
 

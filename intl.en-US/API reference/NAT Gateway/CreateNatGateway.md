@@ -34,22 +34,16 @@ By using [API Explorer](https://api.aliyun.com/#product=Vpc&api=DescribeVpcAttri
  |
 |BandwidthPackage.n.Bandwidth|String|No|5| The bandwidth of the NAT bandwidth package \(n\). Valid value: \[5,5000\]
 
- **Note:** This API can be called only if you purchased a NAT bandwidth package before January 26, 2018. If your account does not have a NAT bandwidth package purchased before January 26, 2018, you need to attach an EIP.
-
  |
 |BandwidthPackage.N.ISP|String|No|BGP| The ISP type of the shared bandwidth package \(n\). Default value: BGP \(multiple lines\).
 
  |
 |BandwidthPackage.n.IpCount|String|No|5| The number of public IP addresses in the shared bandwidth package. Valid value: \[1,50\]. n represents the n-th bandwidth package. Valid values: \[1,4\].
 
- **Note:** This API can be called only if you purchased a NAT bandwidth package before January 26, 2018. If your account did not include a NAT bandwidth package before January 26, 2018, attach an EIP.
-
  |
 |BandwidthPackage.n.Zone|String|No|cn-hangzhou-b| The zone of the shared bandwidth package \(n\). The system randomly allocates a zone if this parameter is not specified.
 
  If the NAT bandwidth package and the backend ECS instance are not in the same zone, the latency of the connection between them is unchanged; if they are in the same zone, the latency can be reduced.
-
- **Note:** This API can be called only if you purchased a NAT bandwidth package before January 26, 2018. If your account does not have a NAT bandwidth package before January 26, 2018, you need to attach an EIP.
 
  |
 |ClientToken|String|No|shefffxxddjehfh123| A client token used to guarantee the idempotence of requests.
