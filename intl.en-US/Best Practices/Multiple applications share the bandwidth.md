@@ -29,7 +29,7 @@ that the private IP addresses of the ECS instances are as follows:
 |ECS3|192.168.1.3|
 |ECS4|192.168.1.4|
 
-## 前提条件 {#section_mrk_121_hgb .section}
+## Prerequisites {#section_mrk_121_hgb .section}
 
 1.  For convenient API calling, this document provides a Python-based Command Line tool. Click [Here](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/attach/32327/cn_zh/1469718485900/api.py?spm=a2c4g.11186623.2.4.kwCDtJ&file=api.py) to download the CLI tool.
 
