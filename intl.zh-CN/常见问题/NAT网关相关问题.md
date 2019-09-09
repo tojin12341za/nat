@@ -1,14 +1,14 @@
 # NAT网关相关问题 {#concept_270217 .concept}
 
--    [一个公网IP可以同时设置DNAT和SNAT规则吗？](#section_vlv_m2f_2bf) 
--    [一个阿里云账号可以创建多少个NAT网关？](#section_0wp_8zk_c6u) 
--    [一个NAT网关可以创建多少条DNAT条目？](#section_igf_d4c_mui) 
--    [一个NAT网关可以创建多少条SNAT条目？](#section_rsx_1cu_8cd) 
--    [一个SNAT条目支持关联多少个公网IP？](#section_oyo_bvw_tt3) 
--    [NAT网关支持查看每个交换机的流量吗？](#section_vcs_0wp_vsg) 
--    [ECS实例分配了固定公网IP且创建了SNAT条目，如何实现ECS实例优先通过SNAT的公网IP访问互联网？](#section_534_7dp_bs8) 
--    [ECS实例绑定了EIP且创建了SNAT条目，如何实现ECS实例优先通过SNAT的公网IP访问互联网？](#section_u9j_9ts_jo0) 
--    [ECS实例设置了DNAT IP映射且创建了SNAT条目，如何实现ECS实例优先通过SNAT的公网IP访问互联网？](#section_0wq_838_rp7) 
+-   [一个公网IP可以同时设置DNAT和SNAT规则吗？](#section_vlv_m2f_2bf)
+-   [一个阿里云账号可以创建多少个NAT网关？](#section_0wp_8zk_c6u)
+-   [一个NAT网关可以创建多少条DNAT条目？](#section_igf_d4c_mui)
+-   [一个NAT网关可以创建多少条SNAT条目？](#section_rsx_1cu_8cd)
+-   [一个SNAT条目支持关联多少个公网IP？](#section_oyo_bvw_tt3)
+-   [NAT网关支持查看每个交换机的流量吗？](#section_vcs_0wp_vsg)
+-   [ECS实例分配了固定公网IP且创建了SNAT条目，如何实现ECS实例优先通过SNAT的公网IP访问互联网？](#section_534_7dp_bs8)
+-   [ECS实例绑定了EIP且创建了SNAT条目，如何实现ECS实例优先通过SNAT的公网IP访问互联网？](#section_u9j_9ts_jo0)
+-   [ECS实例设置了DNAT IP映射且创建了SNAT条目，如何实现ECS实例优先通过SNAT的公网IP访问互联网？](#section_0wq_838_rp7)
 
 ## 一个公网IP可以同时设置DNAT和SNAT规则吗？ {#section_vlv_m2f_2bf .section}
 
