@@ -6,7 +6,7 @@
 
     **说明：** 如果您在2018年1月26日之前购买过NAT带宽包，确保NAT带宽包中有可用的公网IP。
 
--   如果要创建以交换机为粒度的SNAT条目，请确保NAT网关关联的VPC中已经创建了交换机。详细信息，请参见[创建交换机](../intl.zh-CN/用户指南/专有网络和子网/管理交换机.md#section_hd5_g5x_rdb)。
+-   如果要创建以交换机为粒度的SNAT条目，请确保NAT网关关联的VPC中已经创建了交换机。详细信息，请参见[创建交换机](../intl.zh-CN/专有网络和交换机/管理交换机/创建交换机.md#section_hd5_g5x_rdb)。
 -   如果要创建以ECS为粒度的SNAT条目，请确保NAT网关关联的VPC中已经创建了ECS实例。详细信息，请参见[使用向导创建实例](../intl.zh-CN/实例/创建实例/使用向导创建实例.md#)。
 
 1.  登录[专有网络管理控制台](https://vpcnext.console.aliyun.com/nat/)。
@@ -47,4 +47,9 @@
 
  |
 
+
+**相关文档**  
+
+
+[CreateSnatEntry](../../../../../intl.zh-CN/API参考/NAT网关/CreateSnatEntry.md#)
 
