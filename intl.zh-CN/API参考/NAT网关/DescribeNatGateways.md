@@ -18,7 +18,7 @@
  |
 |InstanceChargeType|String|否|PostPaid|实例的付费方式。目前仅支持按量付费。
 
- PostPaid：后付费，即按量付费。
+ PostPaid：按量付费。
 
  |
 |Name|String|否|NAT网关名称|NAT网关的名称。
@@ -52,6 +52,9 @@
 |NatGateways| | |NAT网关的详细信息。
 
  |
+|NatGateway| | |NAT网关的详细信息。
+
+ |
 |AutoPay|Boolean|true|是否自动付费，取值：
 
  -   false：不开启自动付费，生成订单后需要到订单中心完成支付。
@@ -61,6 +64,9 @@
 
  |
 |BandwidthPackageIds| |bwp-s6lmotmkk|NAT网关绑定的带宽包ID。
+
+ |
+|BandwidthPackageId| | |NAT网关绑定的带宽包ID。
 
  |
 |BusinessStatus|String|Normal|NAT网关的状态：
@@ -82,12 +88,18 @@
 |ForwardTableIds| |ftb-uf6gj3mhsg94qsqstfqsx|端口转发表ID。
 
  |
+|ForwardTableId| | |端口转发表ID。
+
+ |
 |InstanceChargeType|String|PostPaid|实例的付费方式。目前仅支持按量付费。
 
- PostPaid：后付费，即按量付费。
+ PostPaid：按量付费。
 
  |
 |IpLists| | |NAT网关绑定的弹性公网IP。
+
+ |
+|IpList| | |NAT网关绑定的弹性公网IP。
 
  |
 |IpAddress|String|116.62.222.xx|弹性公网IP的地址。
@@ -103,6 +115,9 @@
 
  |
 |SnatTableIds| |stb-uf6dalcdu0krz423pv8mq|NAT网关的SNAT表ID。
+
+ |
+|SnatTableId| | |NAT网关的SNAT表ID。
 
  |
 |Spec|String|Small|NAT网关的规格。
