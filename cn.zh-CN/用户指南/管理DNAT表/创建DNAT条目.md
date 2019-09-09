@@ -32,3 +32,8 @@ NAT网关支持DNAT功能，将NAT网关上的公网IP映射给ECS实例使用�
  |
 
 
+**相关文档**  
+
+
+[CreateForwardEntry](../../../../../intl.zh-CN/API参考/NAT网关/CreateForwardEntry.md#)
+
