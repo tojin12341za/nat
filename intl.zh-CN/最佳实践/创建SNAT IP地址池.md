@@ -13,7 +13,7 @@ NAT网关是一款企业级的VPC公网网关，提供SNAT功能，为VPC内无�
 
 您可以选择添加多个EIP到一个SNAT地址池中，当VPC ECS实例主动发起对外的访问连接时，VPC ECS实例会随机通过SNAT地址池中的EIP访问互联网。
 
-![SNAT IP地址池](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/217943/156802295147136_zh-CN.png)
+![SNAT IP地址池](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/217943/156878866547136_zh-CN.png)
 
 ## 步骤一 创建NAT网关 {#section_kaj_h2e_nto .section}
 
@@ -47,7 +47,7 @@ NAT网关是一款企业级的VPC公网网关，提供SNAT功能，为VPC内无�
 5.  在绑定弹性公网IP页面，完成以下操作，然后单击**确定**。
 
     -   **从已有EIP列表选取**：您可以从已有EIP列表选择EIP并绑定NAT网关。
-    -   **新购EIP并绑定NAT网关**：系统为您创建1个按使用流量计费的按量付费EIP，并绑定到NAT网关。
+    -   **新购EIP并绑定NAT网关**：系统为您创建1个按使用流量计费的按量计费EIP，并绑定到NAT网关。
     **说明：** 一个NAT网关最多可绑定20个EIP（最多可绑定10个按流量计费的EIP，每个按流量计费的EIP的最大峰值不能超过200Mbps），您可以提交工单申请更多配额。
 
 6.  重复以上步骤绑定更多EIP。
@@ -90,7 +90,7 @@ NAT网关是一款企业级的VPC公网网关，提供SNAT功能，为VPC内无�
 
 分别登录两台设置了SNAT规则的ECS实例，查看出网的源IP地址。
 
-![ECS1查看出网的源IP地址](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/217943/156802295147157_zh-CN.png)
+![ECS1查看出网的源IP地址](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/217943/156878866547157_zh-CN.png)
 
-![ECS2查看出网的源IP地址](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/217943/156802295147158_zh-CN.png)
+![ECS2查看出网的源IP地址](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/217943/156878866547158_zh-CN.png)
 
